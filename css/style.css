@@ -134,7 +134,6 @@ h1{
 
 .debug{
     min-height: 100px;
-    min-width: 200px;
 }                                  
 
 .business-plan{
@@ -143,7 +142,7 @@ h1{
 }
 
 .business-plan__container{
-    width: 50%;
+    width: 60%;
 }
 
 .business-plan__option_container{
@@ -156,16 +155,81 @@ h1{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .business-plan__option{
     margin: 5px;
-    flex-grow: 1;
     border: 1px solid grey;
+    flex-basis: 30%;
+
+}
+
+.business-plan__option:last-child{
+    flex-grow: 1;
+    margin: 5px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
 }
 
 .business-plan__option div{
+    font-size: 0.7rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+.option-title{
+    padding: 5px;
     text-align: center;
     border-bottom: 1px solid grey;
 }
 
+.time{
+    padding-top: 0;
+
+}
+
+.fa-solid{
+    padding: 0;
+}
+
+.business-plan__option .button{
+    text-align: center;
+    background-color: var(--button-color) ;
+    color: var(--button-text-color);
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.plan_feat{
+    padding: 25px;
+}
+
+.plan_feat *{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.plan_feat_list li{
+    padding-left: 2em;
+    text-indent: -1em;
+}
+
+.plan_feat hr{
+    padding: 0;
+    width: 20%;
+}
+
+h4{
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.fa-check{
+    color: var(--button-color);
+}
