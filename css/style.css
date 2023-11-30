@@ -129,3 +129,43 @@ h1{
     position: absolute;
 }
 
+                                            /*BUSINESS PLAN*/
+
+
+.debug{
+    min-height: 100px;
+    min-width: 200px;
+}                                  
+
+.business-plan{
+    min-height: 1000px;
+    justify-content: center;
+}
+
+.business-plan__container{
+    width: 50%;
+}
+
+.business-plan__option_container{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.business-plan__container_option{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.business-plan__option{
+    margin: 5px;
+    flex-grow: 1;
+    border: 1px solid grey;
+}
+
+.business-plan__option div{
+    text-align: center;
+    border-bottom: 1px solid grey;
+}
+
