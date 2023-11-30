@@ -14,6 +14,12 @@
     align-items: center;
 }
 
+:root{
+    --button-color: rgb(0, 132, 255);
+    --button-text-color: white;
+    --main-font-size: 0.9rem;
+}
+
 
 
 /*HEADER*/
@@ -35,8 +41,91 @@
 }
 
 #Inizia{
-    color: white;
-    background-color: rgb(0, 132, 255);
+    color: var(--button-text-color);
+    background-color: var(--button-color);
     margin-right: 15px;
     padding: 5px 15px;
 }
+
+
+
+                                                /*MAIN*/
+
+                                                /*INTRO*/
+
+.intro{
+    background-color: #b4d0e7;
+    min-height: 500px;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+}
+
+.intro__container{
+    flex-direction: column;
+    width: 70%;
+
+}
+
+/*TITOLO*/
+
+.intro__title{
+    padding: 30px;
+}
+
+h1{
+    color: #000000;
+    font-size: 4rem;
+}
+
+/*CORPO*/
+
+.intro__text-img{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+
+/*TESTO*/
+
+
+.intro__text{
+    width: 30%;
+    font-size: var(--main-font-size);
+}
+
+.intro__text .button{
+    display: inline-block;
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.intro__text span{
+    display: inline-block;
+}
+
+.intro__text i{
+    font-weight: 900;
+    display: block;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+
+/*IMMAGINE*/
+
+
+.intro__img {
+    width: 80%;
+    position: relative;
+}
+
+.intro__img img{
+    width: 100%;
+    position: absolute;
+}
+
