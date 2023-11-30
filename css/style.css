@@ -134,7 +134,9 @@ h1{
 
 .debug{
     min-height: 100px;
-}                                  
+}       
+
+/*PIANI D'ISCRIZIONE*/
 
 .business-plan{
     min-height: 1000px;
@@ -145,11 +147,10 @@ h1{
     width: 60%;
 }
 
-.business-plan__option_container{
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-}
+/*TITOLO E INPUT*/
+
+
+/*PIANI*/
 
 .business-plan__container_option{
     display: flex;
@@ -158,6 +159,8 @@ h1{
     justify-content: space-between;
 }
 
+/*CONTENITORE PIANO*/
+
 .business-plan__option{
     margin: 5px;
     border: 1px solid grey;
@@ -165,23 +168,7 @@ h1{
 
 }
 
-.business-plan__option:last-child{
-    flex-grow: 1;
-    margin: 5px;
-    border: 1px solid grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
-.business-plan__option div{
-    font-size: 0.7rem;
-}
-
-h3{
-    font-size: 1.2rem;
-}
+/*TITOLO*/
 
 .option-title{
     padding: 5px;
@@ -189,25 +176,27 @@ h3{
     border-bottom: 1px solid grey;
 }
 
-.time{
-    padding-top: 0;
+h3{
+    font-size: 1.2rem;
+}
 
+
+/*OFFERTA*/
+
+.business-plan__option div{
+    font-size: 0.7rem;
 }
 
 .fa-solid{
     padding: 0;
 }
 
-.business-plan__option .button{
-    text-align: center;
-    background-color: var(--button-color) ;
-    color: var(--button-text-color);
-    padding: 10px;
-    margin: 20px 0;
-}
-
 .plan_feat{
     padding: 25px;
+}
+
+.time{
+    padding-top: 0;
 }
 
 .plan_feat *{
@@ -220,6 +209,14 @@ h3{
     text-indent: -1em;
 }
 
+.business-plan__option .button{
+    text-align: center;
+    background-color: var(--button-color) ;
+    color: var(--button-text-color);
+    padding: 10px;
+    margin: 20px 0;
+}
+
 .plan_feat hr{
     padding: 0;
     width: 20%;
@@ -229,6 +226,39 @@ h4{
     font-size: 0.9rem;
     margin-top: 10px;
 }
+
+
+
+.business-plan__option:last-child{
+    flex-grow: 1;
+    margin: 5px;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .fa-check{
     color: var(--button-color);
