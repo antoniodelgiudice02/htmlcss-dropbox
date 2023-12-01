@@ -19,7 +19,7 @@ a{
     display: flex;
 }
 
-.debug{
+.debug > *{
     border: 2px dashed black;
     padding: 5px;
 }
@@ -60,13 +60,14 @@ a{
 
 /*JUMBO*/
 
+
 #jumbo{
     justify-content: center;
     background-color: #b4d0e7;
 }
 
 #jumbo .container{
-    width: 60%;
+    width: 80%;
     align-items: center;
 }
 
@@ -79,6 +80,33 @@ a{
 }
 
 #jumbo .text{
-    justify-content: space-between;
     width: 40%;
+}
+
+#jumbo .text > *{
+    padding: 20px;
+}
+
+/*BUSINESS*/
+
+#business{
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+#business .container{
+    width: 60%;
+}
+
+#business .card{
+    width: calc(100% / 3);
+}
+
+#business .body{
+    flex-wrap: wrap;
+}
+
+#business .card:last-child{
+    flex-grow: 1;
 }
