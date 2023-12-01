@@ -2,4 +2,50 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+a{
+    color: inherit;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.debug{
+    border: 2px dashed black;
+}
+
+
+/*HEADER*/
+
+#header{
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgb(136, 136, 136);
+    padding: 5px;
+}
+
+#header .d-flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header li{
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+#header img{
+    padding-right: 10px;
+}
+
+.button{
+    background-color: rgb(0, 132, 255);
+    color: white;
+    padding: 5px 10px;
 }
