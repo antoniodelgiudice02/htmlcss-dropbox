@@ -270,6 +270,24 @@ a{
 }
 
 
+/*FAQ*/
+
+#FAQ{
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#FAQ .container{
+    width: 60%;
+    height: 60%;
+
+}
+
+#FAQ li{
+    padding: 30px 0;
+}
+
 
 
 
