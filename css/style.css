@@ -110,3 +110,32 @@ a{
 #business .card:last-child{
     flex-grow: 1;
 }
+
+/*PARTNER*/
+
+#partner{
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#partner .container{
+    width: 60%;
+}
+
+#partner .img{
+    width: 60%;
+}
+
+#partner img{
+    width: 100%;
+}
+
+#partner .testo{
+    width: 40%;
+}
+
+#partner .testo > *{
+    padding: 20px;
+
+}
