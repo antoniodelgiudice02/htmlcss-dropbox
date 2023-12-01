@@ -164,3 +164,21 @@ a{
     width: 100%;
 }
 
+/*SCOPRI DI PIU*/
+
+#scopridipiu{
+
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+#scopridipiu > div{
+    width: 60%;
+}
+
+#scopridipiu .container{
+    width: 70%;
+    height: 150px;
+    justify-content: space-between;
+}
