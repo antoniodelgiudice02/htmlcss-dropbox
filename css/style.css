@@ -99,7 +99,7 @@ a{
     width: 60%;
 }
 
-#business .card{
+.card{
     width: calc(100% / 3);
 }
 
@@ -139,3 +139,28 @@ a{
     padding: 20px;
 
 }
+
+/*DROP-BIZ*/
+
+#drop-biz{
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+#drop-biz .container{
+    width: 60%;    
+}
+
+#drop-biz .body{
+    flex-wrap: wrap;
+}
+
+#drop-biz .img{
+    width: 100%;
+}
+
+#drop-biz img{
+    width: 100%;
+}
+
