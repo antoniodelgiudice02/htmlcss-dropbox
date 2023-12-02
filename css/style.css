@@ -4,10 +4,15 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    list-style-type: none;
 }
 
 a{
     color: inherit;
+}
+
+p{
+    font-size: var(--main-font-size);
 }
 
 .d-flex{
@@ -19,7 +24,12 @@ a{
     display: flex;
 }
 
-.debug > *{
+:root{
+    --main-padding: 20px;
+    --main-font-size: 0.8rem;
+}
+
+/*.debug > *{
     border: 2px dashed black;
     padding: 5px;
 }
@@ -31,7 +41,7 @@ a{
     height: 80px;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: var(--main-font-size);
     color: rgb(136, 136, 136);
     padding: 5px;
 }
@@ -54,6 +64,7 @@ a{
     background-color: rgb(0, 132, 255);
     color: white;
     padding: 5px 10px;
+    text-align: center;
 }
 
 /*MAIN*/
@@ -64,27 +75,42 @@ a{
 #jumbo{
     justify-content: center;
     background-color: #b4d0e7;
+    height: 500px;
 }
 
 #jumbo .container{
-    width: 80%;
+    width: 70%;
     align-items: center;
+    padding: var(--main-padding);
 }
 
 #jumbo .img{
-    width: 60%;
+    width: 70%;
 }
 
 #jumbo img{
-    width: 100%
+    width: 100%;
+    position:relative;
+    bottom: -20px;
+    left: -30px;
 }
 
 #jumbo .text{
     width: 40%;
+    font-size: var(--main-font-size);
 }
 
 #jumbo .text > *{
-    padding: 20px;
+    padding: var(--main-padding);
+}
+
+h1{
+    font-size: 4rem;
+    padding: var(--main-padding);
+}
+
+#jumbo i{
+    font-size: 2rem;
 }
 
 /*BUSINESS*/
@@ -92,23 +118,86 @@ a{
 #business{
     justify-content: center;
     align-items: center;
-    height: 1000px;
+    min-height: 1300px;
 }
 
 #business .container{
     width: 60%;
 }
 
-.card{
-    width: calc(100% / 3);
+.business-header{
+    margin: 5px;
 }
 
-#business .body{
+.business-header h2{
+    font-size: 2rem;
+    padding: 20px 0;
+}
+
+.fattura{
+    align-items: center;
+}
+
+.box{
+    width: 15px;
+    height: 15px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.card{
+    width: calc(100% / 3 - 40px);
+    border: 1px solid rgb(184, 184, 184);
+    min-height: auto;
+    margin: 10px;
+}
+
+
+#business .business-body{
     flex-wrap: wrap;
+    font-size: var(--main-font-size);
+    justify-content: space-between;
+}
+
+#business .card-header{
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid rgb(184, 184, 184);
+}
+
+#business .card-body{
+    padding: var(--main-padding);
+}
+
+.card-body *{
+    padding: 10px 0;
+}
+
+.fa-solid{
+    font-weight: 900;
+    padding: 0 5px 0 0;
+}
+
+.fa-check{
+    color: #0093ce;
 }
 
 #business .card:last-child{
     flex-grow: 1;
+}
+
+.card-body:last-child > div:first-child{
+    width: 60%;
+
+}
+
+#ufficio{
+    width: 40%;
+}
+
+.card-body .button{
+    margin: auto;
 }
 
 /*PARTNER*/
@@ -311,6 +400,10 @@ footer{
 
 #footer h3{
     padding: 10px 0;
+}
+
+#footer .list{
+    align-content: space-between;
 }
 
 
