@@ -119,6 +119,7 @@ h1{
     justify-content: center;
     align-items: center;
     min-height: 1300px;
+    padding: var(--main-padding);
 }
 
 #business .container{
@@ -206,6 +207,7 @@ h1{
     justify-content: center;
     align-items: center;
     height: 500px;
+    padding: var(--main-padding);
 }
 
 #partner .container{
@@ -235,15 +237,32 @@ h1{
     justify-content: center;
     align-items: center;
     height: 1000px;
+    padding: var(--main-padding);
 }
 
 #drop-biz .container{
     width: 60%;    
 }
 
+#drop-biz h2{
+    font-size: 2rem;
+    padding: var(--main-padding);
+}
+
 #drop-biz .body{
     flex-wrap: wrap;
+    padding: var(--main-padding);
 }
+
+#drop-biz .card {
+    border: none;
+}
+
+#drop-biz h3{
+    padding: 20px 0;
+}
+
+
 
 #drop-biz .img{
     width: 100%;
@@ -260,6 +279,7 @@ h1{
     height: 300px;
     justify-content: center;
     align-items: center;
+    padding: var(--main-padding);
 }
 
 #scopridipiu > div{
@@ -270,6 +290,17 @@ h1{
     width: 70%;
     height: 150px;
     justify-content: space-between;
+    padding: var(--main-padding);
+}
+
+#scopridipiu h2{
+    font-size: 2rem;
+}
+
+#scopridipiu a{
+    font-size: var(--main-font-size);
+    color: #0093ce;
+    text-decoration: underline;
 }
 
 /*MAIN CUSTOMERS*/
@@ -297,6 +328,7 @@ h1{
 
 .green{
     background-color: #a2d39b;
+    border: 10px solid #d0e8cc;
 }
 
 .bordeaux{
@@ -336,11 +368,24 @@ h1{
     width: 80%;
     height: 25%;
     filter: none;
+    padding-bottom: var(--main-padding)
 }
 
-#main-customers .banner{
-    background-color: rgb(204, 204, 204);
+#main-customers .banner:nth-child(2){
+    background-color: #f5f5f5;
     align-content: flex-start;
+    padding: var(--main-padding);
+}
+
+#ruler{
+    width: 100px;
+    border: 1px solid #e6e6e8;
+    margin: 20px 0;
+}
+
+#main-customers .text *{
+    padding: var(--main-padding) 0;
+    font-size: var(--main-font-size);
 }
 
 #main-customers .outro{
