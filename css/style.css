@@ -119,11 +119,11 @@ h1{
     justify-content: center;
     align-items: center;
     min-height: 1300px;
-    padding: var(--main-padding);
+    padding: 100px 200px;
 }
 
 #business .container{
-    width: 60%;
+    width: 80%;
 }
 
 .business-header{
@@ -148,7 +148,7 @@ h1{
 }
 
 .card{
-    width: calc(100% / 3 - 40px);
+    width: calc(100% / 3 - 20px);
     border: 1px solid rgb(184, 184, 184);
     min-height: auto;
     margin: 10px;
@@ -207,11 +207,11 @@ h1{
     justify-content: center;
     align-items: center;
     height: 500px;
-    padding: var(--main-padding);
+    padding: var(--main-padding) 200px;
 }
 
 #partner .container{
-    width: 60%;
+    width: 80%;
 }
 
 #partner .img{
@@ -237,11 +237,11 @@ h1{
     justify-content: center;
     align-items: center;
     height: 1000px;
-    padding: var(--main-padding);
+    padding: var(--main-padding) 200px;
 }
 
 #drop-biz .container{
-    width: 60%;    
+    width: 80%;    
 }
 
 #drop-biz h2{
@@ -279,11 +279,11 @@ h1{
     height: 300px;
     justify-content: center;
     align-items: center;
-    padding: var(--main-padding);
+    padding: var(--main-padding) 200px;
 }
 
 #scopridipiu > div{
-    width: 60%;
+    width: 80%;
 }
 
 #scopridipiu .container{
@@ -403,6 +403,27 @@ h1{
     align-items: center;
 }
 
+.outro{
+    padding: var(--main-padding) 200px;
+}
+
+.outro-container{
+    width: 80%;
+}
+
+.outro-container > div{
+    width: 50%;
+    height: 100px;
+}
+
+.outro-container > div:last-child{
+    text-align: center;
+}
+
+.outro h2{
+    font-size: 2rem;
+    color: #61082b;
+}
 
 /*FAQ*/
 
@@ -410,16 +431,37 @@ h1{
     justify-content: center;
     align-items: center;
     height: 500px;
+    padding: var(--main-padding) 200px;
+
 }
 
 #FAQ .container{
-    width: 60%;
+    width: 80%;
     height: 60%;
+    justify-content: center;
 
+}
+
+#FAQ h2{
+    font-size: 2rem;
+    padding-bottom: var(--main-padding) ;
+}
+
+#FAQ ul{
+    padding-top: var(--main-padding);
 }
 
 #FAQ li{
     padding: 30px 0;
+    font-size: var(--main-font-size);
+    border: 1px solid grey;
+    border-left: none;
+    border-right: none;
+}
+
+#FAQ .fa-chevron-down{
+    position: relative;
+    left: 35%;
 }
 
 
@@ -434,23 +476,47 @@ footer{
 
 #footer{
     width: 60%;
-    height: 600px;
-    justify-content: space-around;
+    height: 400px;
+    justify-content: center;
     align-items: flex-start;
+}
+
+#footer > ul > li{
+    padding: 5px 0;
+    font-size: var(--main-font-size);
 }
 
 #footer li{
     padding: 5px 0;
 }
 
+
 #footer h3{
     padding: 10px 0;
+    font-size: 1rem;
 }
 
 #footer .list{
-    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
 }
 
+.ruler{
+    width: 100px;
+    border: 1px solid gray;
+    margin: 50px 0;
+}
+
+.lenguage{
+    font-size: var(--main-font-size);
+}
+
+.fa-sort-up{
+    position: relative;
+    top: 25%;
+    padding-left: 5px;
+}
 
 
 
